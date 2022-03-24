@@ -6,7 +6,7 @@ export default function About(props) {
         <div className="about-card2 shadow p-2  rounded">
             <div className="about-card p-4 container">
                 <p className="display-10">Hello there! I'm</p>
-                <h1 className="display-2">Adam Piersons</h1>
+                <h1 className="display-2">Adam Pearson</h1>
                 <p className="lead">Junior Full Stack Developer</p>
                 <hr className="my-2" />
                 <h6>About</h6>
