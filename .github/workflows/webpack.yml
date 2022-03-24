@@ -1,4 +1,4 @@
-name: NodeJS with Webpack
+name: Webpack and deploy github page
 
 on:
   push:
@@ -11,7 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout 🛎️
+      uses: actions/checkout@v3
 
     - name: Use Node.js 17.7.1
       uses: actions/setup-node@v1
@@ -22,3 +23,9 @@ jobs:
       run: |
         npm install
         npm run build
+
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4.2.5
+      with:
+        branch: build # The branch the action should deploy to.
+        folder: docs # The folder the action should deploy.
