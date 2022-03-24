@@ -48,4 +48,5 @@ Temporary Items
 
 ### OTHER ###
 node_modules
+dist
 *.DS_
