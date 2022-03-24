@@ -9,7 +9,7 @@ module.exports = {
     entry: path.resolve(__dirname, 'src', 'index.js'),
     output: {
         // the output of the webpack build will be in /dist directory
-        path: path.resolve(__dirname, 'docs'),
+        path: path.resolve(__dirname, 'dist'),
         publicPath: '/',
         // the filename of the JS bundle will be bundle.js
         filename: 'bundle.js',
@@ -20,7 +20,7 @@ module.exports = {
 
 
         static: {
-            directory: path.join(__dirname, 'dist'),
+            directory: path.join(__dirname, 'assets'),
         },
         port: 9000,
         liveReload: true,
